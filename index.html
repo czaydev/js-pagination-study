@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API & URL Sync Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Blog Yazıları</h1>
+
+    <!-- Filtre ve Limit Kontrol Alanı -->
+    <div class="controls">
+      <input type="text" id="search-input" placeholder="Yazılarda ara..." />
+      <select id="limit-select">
+        <option value="5">5 Yazı</option>
+        <option value="10">10 Yazı</option>
+        <option value="20">20 Yazı</option>
+      </select>
+    </div>
+
+    <!-- Durum / Yükleniyor Bilgisi -->
+    <div id="status" class="status"></div>
+
+    <!-- Yazıların DOM ile ekleneceği alan -->
+    <div id="blog-list"></div>
+
+    <!-- Sayfalama butonlarının DOM ile ekleneceği alan -->
+    <div id="pagination" class="pagination"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
